@@ -1,11 +1,10 @@
-"use client";
-//import type { Metadata } from "next";
+//"use client";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./app.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 
 //export const metadata: Metadata = {
@@ -20,9 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Authenticator>{children}</Authenticator>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
